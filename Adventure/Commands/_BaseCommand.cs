@@ -9,5 +9,6 @@ namespace Adventure.Commands
     public abstract class BaseCommand
     {
         public abstract void Execute(World world, params string[] @params);
+        
     }
 }
