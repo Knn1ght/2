@@ -1,6 +1,7 @@
 ﻿using Adventure.Rooms;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,10 @@ namespace Adventure
     public class World
     {
         public BaseRoom CurrentRoom { get; private set; }
+        public void SwitchRoom(BaseRoom room)
+        {
+            CurrentRoom = room;
+        }
 
         public World() 
         {
