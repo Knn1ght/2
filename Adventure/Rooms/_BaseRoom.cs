@@ -9,25 +9,30 @@ namespace Adventure.Rooms
 {
     public abstract class BaseRoom
     {
-        protected List<BaseRoom> neighbours = new List<BaseRoom>();
-        protected List<BaseItem> items = new List<BaseItem>();
+        public List<BaseRoom> Neighbours = new List<BaseRoom>();
+        public List<BaseItem> Items = new List<BaseItem>();
 
         public abstract string Name { get; }
         public abstract string Description { get; }
 
         public void RegisterNeighbour(BaseRoom room)
         {
-            neighbours.Add(room);
+            Neighbours.Add(room);
         }
 
         public void AddItem(BaseItem item)
         {
-            items.Add(item);
+            Items.Add(item);
         }
 
         public void RemoveItem(BaseItem item) 
         { 
-            items.Remove(item); 
+            Items.Remove(item); 
         }
+        public override string ToString()
+        {
+            return Name;
+        }
+
     }
 }
