@@ -6,7 +6,7 @@ var world = new World();
 var commands = new Dictionary<string, BaseCommand>()
 {
     { "look", new LookAroundCommand() },
-
+    { "go", new GoCommand() },
     { "help", new HelpCommand() },
     { "quit", new QuitCommand() },
     { "test", new TestCommand() },

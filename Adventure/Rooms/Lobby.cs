@@ -14,7 +14,7 @@ namespace Adventure.Rooms
             AddItem(new Sword());
         }
            
-        public override string Description => "room";
+        public override string Description => "Starting room";
 
         public override string Name => "Lobby";
     }

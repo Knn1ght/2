@@ -22,6 +22,7 @@ namespace Adventure
             var corridor = new Corridor();
 
             lobby.RegisterNeighbour(corridor);
+            corridor.RegisterNeighbour(lobby);
 
             CurrentRoom = lobby;
         }
