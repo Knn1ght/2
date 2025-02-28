@@ -1,4 +1,5 @@
-﻿using Adventure.Rooms;
+﻿using Adventure.Items;
+using Adventure.Rooms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -16,7 +17,7 @@ namespace Adventure
             CurrentRoom = room;
         }
 
-        public World() 
+        public World()
         {
             var lobby = new Lobby();
             var corridor = new Corridor();
