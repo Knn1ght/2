@@ -9,8 +9,9 @@ var commands = new Dictionary<string, BaseCommand>()
     { "go", new GoCommand() },
     { "help", new HelpCommand() },
     { "quit", new QuitCommand() },
-    { "test", new TestCommand() },
+    { "amogus", new TestCommand() },
     { "pick", new PickUpCommand() },
+    { "inv", new invcommand() },
 };
 
 AnsiConsole.MarkupLine(world.Intro);

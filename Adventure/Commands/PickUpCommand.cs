@@ -24,7 +24,7 @@ namespace Adventure.Commands
                 return;
 
             }
-
+            world.Inventory.ItemsInv.Add(item);
         }
     }
 }
