@@ -28,6 +28,7 @@ namespace Adventure
             CurrentRoom = lobby;
         }
         public Inventory Inventory { get; } = new();
+        public HealthBar HealthBar { get; } = new();
         public string Intro { get; } = @"
 How did you end up here? You don't really know. Maybe you fell, maybe someone pushed you.
 One thing is certain, you need to [red italic]GET OUT OF HERE![/]

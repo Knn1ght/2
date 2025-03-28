@@ -11,5 +11,7 @@ namespace Adventure.Items
         public override string Name => "Sword";
 
         public override string Description => "Almost fully broken sword";
+
+        public override int Weight => 5;
     }
 }
